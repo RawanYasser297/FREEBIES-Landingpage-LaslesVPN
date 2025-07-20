@@ -1,0 +1,228 @@
+@media (max-width: 900px) {
+  header {
+    position: relative;
+  }
+
+  nav {
+    position: absolute;
+    bottom: -0.5rem;
+    width: 100%;
+  }
+  header .bottoms {
+    flex-basis: 50%;
+    justify-content: flex-end;
+  }
+  .head {
+    gap: 0rem;
+  }
+  h1 {
+    font-size: 35px;
+    max-width: 450px;
+  }
+  .head-content p {
+    max-width: 450px;
+  }
+  .features {
+    gap: 1.5rem;
+    
+
+    .features-content {
+      padding-top: 1rem;
+    }
+
+    .features-p {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .subscribe {
+    padding:2rem;
+  } 
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .main-view {
+    margin-top: 2rem;
+  }
+
+  h2 {
+    height: fit-content;
+    max-width: 300px;
+  }
+
+  header .bottoms a {
+    width: 100px;
+    height: 35px;
+    padding: 0.4rem 0.2rem;
+  }
+  .sign-in {
+    text-align: end;
+  }
+
+  .head {
+    gap: 1rem;
+  }
+
+  .head,
+  .features,
+  .pricing {
+    flex-direction: column;
+  }
+
+
+  .head-content,
+  .features-content {
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .head .head-img {
+    order: 0;
+  }
+
+  .spread {
+    height: fit-content;
+    box-shadow: none;
+    gap: 2rem;
+    margin-bottom: 0;
+
+    .location,
+    .server,
+    .user {
+      border: none;
+      padding: 1rem;
+      box-shadow: 1px 2px 20px 0px rgb(13 16 37 / 5%);
+      border-radius: 10px;
+    }
+  }
+  
+
+  .pricing-p {
+    text-align: center;
+  }
+
+  .network h2,
+  .testimonials h2,
+  .subscribe h2 {
+    height: fit-content;
+  }
+
+  .network .network-p,
+  .testimonials-p {
+    margin-bottom: 0.5rem;
+  }
+
+  .colab {
+    height: fit-content;
+  }
+
+  .network,
+  .testimonials {
+    gap: 1rem;
+  }
+
+  .testimonials .people {
+    margin-left: 0;
+  }
+  
+  .swap .dots .dot.suc{
+    margin-left: -1.3rem;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    align-items: flex-start;
+    
+    h2,p{
+      max-width: 100%;
+    }
+
+    .get-start-link {
+      box-shadow: none;
+      margin-top: 1rem;
+    }
+
+  }
+
+  .footer {
+    // grid-template-columns: auto auto auto;
+    // height: fit-content;
+    // gap: 2rem;
+    flex-direction: column;
+  }
+
+  .social-icons {
+    margin-left: -1rem;
+  }
+
+  .lists {
+    gap: 0.5rem;
+  }
+
+  .sign {
+    margin-top: 1.5rem;
+  }
+
+  .swap {
+    gap: 2rem;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  
+  
+
+  
+
+  .personal-opinion {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .colab {
+    flex-wrap: wrap;
+    .colab-img {
+      width: 30%;
+    }
+  }
+  header .bottoms {
+    flex: 1;
+    gap: 0.1rem;
+    .sign-in {
+      width: 50px;
+      margin-right: .2rem;
+    }
+    .sign-up {
+      width: 60px;
+      border: none;
+      border-radius: 0;
+      border-left: .1rem var(--orange) solid;
+      
+    }
+  }
+
+  .features-content{
+    gap: 0;
+    padding: 0;
+  }
+}
