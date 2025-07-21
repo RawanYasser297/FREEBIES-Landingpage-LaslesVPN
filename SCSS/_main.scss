@@ -85,26 +85,28 @@ li img {
 }
 
 header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   padding: 2rem 0;
   align-items: center;
+  z-index: 10000;
 }
 
-nav {
+.nav-bar {
   flex-basis: 50%;
   display: flex;
   gap: 1rem;
   justify-content: space-evenly;
 }
 
-nav a {
+.nav-bar a {
   color: var(--paragraph);
   transition: .3s;
 }
 
-nav a:hover {
+.nav-bar a:hover {
   color: var(--orange);
 }
 
@@ -159,7 +161,14 @@ header .bottoms {
   gap: 2rem;
 }
 
-h1 {
+.nav-mobile{
+  display: none;
+}
+
+
+
+
+h1{
   max-width: 555px;
   max-height: 140px;
   font-weight: 500;
@@ -172,6 +181,7 @@ h1 {
   font-size: 1rem;
   font-weight: 400;
 }
+
 
 .get-start-link {
   background-color: var(--orange);

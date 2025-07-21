@@ -3,7 +3,7 @@
     position: relative;
   }
 
-  nav {
+  .nav-bar {
     position: absolute;
     bottom: -0.5rem;
     width: 100%;
@@ -24,7 +24,6 @@
   }
   .features {
     gap: 1.5rem;
-    
 
     .features-content {
       padding-top: 1rem;
@@ -36,8 +35,8 @@
   }
 
   .subscribe {
-    padding:2rem;
-  } 
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -73,7 +72,6 @@
     flex-direction: column;
   }
 
-
   .head-content,
   .features-content {
     align-items: center;
@@ -100,7 +98,6 @@
       border-radius: 10px;
     }
   }
-  
 
   .pricing-p {
     text-align: center;
@@ -129,19 +126,20 @@
   .testimonials .people {
     margin-left: 0;
   }
-  
-  .swap .dots .dot.suc{
+
+  .swap .dots .dot.suc {
     margin-left: -1.3rem;
   }
 
   .subscribe {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.5rem;
     justify-content: center;
     align-items: flex-start;
-    
-    h2,p{
+
+    h2,
+    p {
       max-width: 100%;
     }
 
@@ -149,13 +147,9 @@
       box-shadow: none;
       margin-top: 1rem;
     }
-
   }
 
   .footer {
-    // grid-template-columns: auto auto auto;
-    // height: fit-content;
-    // gap: 2rem;
     flex-direction: column;
   }
 
@@ -180,11 +174,6 @@
     height: 10px;
   }
 
-  
-  
-
-  
-
   .personal-opinion {
     width: 300px;
   }
@@ -197,7 +186,39 @@
 
   h2 {
     font-size: 25px;
+    width: 100%;
   }
+
+  .nav-bar{
+    top: -50rem;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    background-color: var(--bg);
+    transition: .3s;
+    padding: 1rem;
+    z-index: -1;
+  }
+
+
+  .nav-mobile {
+    display: inline-block;
+    flex-basis: 30px;
+
+    #nav-mobile-checkbox {
+      display: none;
+    }
+
+  }
+
+  header:has(#nav-mobile-checkbox:checked)  .nav-bar{
+   top: 5rem;
+  }
+
+
+  
+
+
 
   .colab {
     flex-wrap: wrap;
@@ -205,24 +226,31 @@
       width: 30%;
     }
   }
+
   header .bottoms {
-    flex: 1;
-    gap: 0.1rem;
-    .sign-in {
-      width: 50px;
-      margin-right: .2rem;
-    }
-    .sign-up {
-      width: 60px;
-      border: none;
-      border-radius: 0;
-      border-left: .1rem var(--orange) solid;
-      
-    }
+    // position: absolute;
+    // gap: 1rem;
+
+    // .sign-in {
+    //   width: 50px;
+    //   margin-right: 0.2rem;
+    // }
+
+    // .sign-up {
+    //   width: 60px;
+    //   border: none;
+    //   border-radius: 0;
+    //   border-left: 0.1rem var(--orange) solid;
+    // }
+    display: none;
   }
 
-  .features-content{
-    gap: 0;
+  .features,
+  .features .features-content {
     padding: 0;
+    width: 100%;
+  }
+  .features-p {
+    line-height: normal;
   }
 }
