@@ -228,21 +228,11 @@
   }
 
   header .bottoms {
-    // position: absolute;
-    // gap: 1rem;
-
-    // .sign-in {
-    //   width: 50px;
-    //   margin-right: 0.2rem;
-    // }
-
-    // .sign-up {
-    //   width: 60px;
-    //   border: none;
-    //   border-radius: 0;
-    //   border-left: 0.1rem var(--orange) solid;
-    // }
     display: none;
+  }
+
+  .subscribe {
+    padding: 1rem;
   }
 
   .features,
