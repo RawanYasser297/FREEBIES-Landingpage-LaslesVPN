@@ -1,0 +1,51 @@
+@import "./maxmin";
+@import "../responsive";
+
+.features {
+  @include sectionFlex();
+  gap: 3rem;
+  justify-content: space-between;
+  padding: 2rem 2rem 5rem;
+
+  @include responsive(md) {
+    @include section();
+  }
+}
+
+.features .features-img {
+  max-width: 600px;
+  max-height: 382.44px;
+}
+
+.features-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  padding: 2.5rem 2rem 0;
+
+  @include responsive(md) {
+    align-items: center;
+  }
+}
+
+
+
+@include responsive(sm) {
+  .features{
+    padding: 1rem;
+  }
+  .features-content{
+    padding: 1rem;
+  }
+  .features__header,.features__header {
+    width: 100%;
+  }
+}
+
+.features-paragraph {
+  font-size: 1rem;
+  font-weight: var(--weight-400);
+  max-width: 30.6rem;
+  max-height: 3.9rem;
+  color: var(--paragraph);
+}

@@ -1,0 +1,41 @@
+.subscribe{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-width: 71.25rem;
+  margin: 0 auto;
+  height: 14.5rem;
+  gap: var(--gap);
+  background-color: var(--bg);
+  padding: 2.6rem 4.3rem;
+  justify-content: space-between;
+  border-radius: var(--radius);
+  box-shadow: 0px 20px 20px 20px rgb(5 11 47 / 6%);
+  text-align: right;
+
+  @include responsive(sm) {
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    padding:1rem;
+    align-items: center;
+    gap: 0;
+
+  .section__content{
+  gap: 0;
+  padding:1rem 0;
+  }
+
+  button{
+    transform: translateY(-1.5rem);
+  }
+
+
+
+
+
+  }
+
+}
+
+

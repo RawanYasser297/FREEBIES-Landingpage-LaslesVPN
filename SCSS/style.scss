@@ -1,3 +1,15 @@
-@import "./reset";
-@import"./_main.scss";
+@import"./Globals/reset";
+@import"./Globals/vars";
+@import"./Globals/global";
+@import"./Pages/maxmin";
+@import"./Layout/header";
+@import"./Layout/footer";
+@import"./Components/nav";
+@import"./Components/media";
+@import"./Components/colab";
+@import"./Components/supscribe";
+@import"./Pages/hero";
+@import"./Pages/features";
+@import"./Pages/pricing";
+@import"./Pages/testimonials";
 @import "./responsive";

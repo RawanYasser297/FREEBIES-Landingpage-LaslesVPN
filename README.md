@@ -10,7 +10,7 @@ Check out the live site here:
 ## 📁 GitHub Repository
 
 Explore the source code here:  
-🔗 [GitHub Repo](https://github.com/RawanYasser297/FREEBIES-Landingpage-LaslesVPN.git)
+🔗 [GitHub Repo](https://github.com/RawanYasser297/FREEBIES-Landingpage-LaslesVPN--Community.git)
 
 ## 📸 Features
 
@@ -33,6 +33,6 @@ _Add screenshots here if available (you can upload image files or use links to h
 To run this project locally:
 
 ```bash
-git clone https://github.com/RawanYasser297/FREEBIES-Landingpage-LaslesVPN
-cd Personal-Portfolio
+git clone https://github.com/RawanYasser297/FREEBIES-Landingpage-LaslesVPN--Community.git
+cd FREEBIES-Landingpage-LaslesVPN--Community
 open index.html  # or just double-click the file

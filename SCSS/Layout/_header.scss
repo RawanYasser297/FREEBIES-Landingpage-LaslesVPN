@@ -1,0 +1,76 @@
+@import "../responsive";
+
+header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 0;
+  align-items: center;
+  z-index: 10000;
+
+  .bottoms {
+    flex-basis: 25%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  @include responsive(md) {
+    .bottoms {
+      flex-basis: 50%;
+      justify-content: flex-end;
+    }
+  }
+
+  @include responsive(xs) {
+    .bottoms{
+      display: none;
+    }
+    .menu {
+      display: inline-block;
+      flex-basis: 30px;
+
+      #menu__checkbox {
+        display: none;
+      }
+    }
+
+
+  }
+}
+
+.sign-in {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--main);
+}
+
+.sign-up {
+  width: 150px;
+  height: 45px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--orange);
+  border-radius: 50px;
+  border: var(--orange) solid 0.1rem;
+  padding: 0.7rem 0.2rem;
+  background-color: transparent;
+}
+
+
+    .menu:has(#menu_checkbox:checked) ~ .nav-bar{
+      top: 2rem;
+      background-color: aqua;
+    }
+
+
+    header:has(#menu__checkbox:checked) .nav-bar {
+    top: 5rem;
+  }

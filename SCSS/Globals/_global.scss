@@ -1,0 +1,119 @@
+@import "../responsive";
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Rubik", sans-serif;
+  // font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.12rem;
+  z-index: 100;
+
+  @include responsive(sm){
+    gap: 2rem;
+  }
+
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.9rem;
+  gap: 0.1rem;
+}
+
+a,button,li{
+  cursor: pointer;
+}
+
+.testimonials::before,
+.network::after,
+.colab::after,
+.pricing::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--dark-bg);
+  width: 100vw;
+  height: 100%;
+  z-index: -1000;
+}
+
+
+
+.section__header {
+  font-size: 2.1rem;
+  font-weight: var(--weight-500);
+  max-width: 23.9rem;
+  max-height: 6.2rem;
+  color: var(--main);
+  text-align: center;
+  line-height: 3rem;
+
+  @include responsive(sm) {
+    line-height: 2rem;
+  }
+
+  
+}
+
+.section__paragraph {
+  font-size: 1rem;
+  font-weight: var(--weight-400);
+  max-width: 34.6rem;
+  max-height: 3.75rem;
+  color: var(--paragraph);
+  margin: 0 auto 1.8rem;
+  text-align: center;
+  line-height: 1.8rem;
+
+  // @include responsive(lg) {
+  //   max-width: 80%;
+  // }
+}
+
+.section__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-gap);
+  
+}
+
+
+
+@include responsive(sm) {
+   .section__header{
+    font-size: 1.5rem;
+    width: 100%;
+    height: fit-content;
+   }
+
+  
+
+  }

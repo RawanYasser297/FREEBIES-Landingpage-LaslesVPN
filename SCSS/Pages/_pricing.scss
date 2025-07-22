@@ -1,0 +1,88 @@
+
+
+.pricing {
+  position: relative;
+  background-color: var(--dark-bg);
+  padding: 5rem 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  height: fit-content;
+}
+
+.offers {
+  @include sectionFlex();
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.offers .offer-container {
+  height: 700px;
+  width: 270px;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-radius: var(--radius);
+  border: 2px solid var(--boarder-color);
+}
+
+.offers .offer-container:last-of-type {
+  border: 2px solid var(--orange);
+}
+
+.offer-container div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+}
+
+.offers .free {
+  height: fit-content;
+  padding: 0.5rem;
+  flex-direction: row;
+  height: fit-content;
+}
+
+.box {
+  width: 144.9px;
+  height: 165.37px;
+}
+
+.offer-container span {
+  font-weight: 500;
+  color: var(--main);
+}
+
+.offer-container ul li p {
+  font-size: 14px;
+}
+
+.offer-container .select {
+  font-weight: var(--weight-700);
+  font-size: 1rem;
+  border-radius: 50px;
+  width: 130px;
+  height: 30px;
+  border: var(--orange) solid 0.1rem;
+  background-color: var(--bg);
+  color: var(--orange);
+}
+
+.offer-container .sign-up-last {
+  font-weight: var(--weight-700);
+  font-size: 1rem;
+  border-radius: 50px;
+  width: 130px;
+  height: 30px;
+  border: var(--orange) solid 0.1rem;
+  background-color: var(--orange);
+  color: var(--bg);
+}

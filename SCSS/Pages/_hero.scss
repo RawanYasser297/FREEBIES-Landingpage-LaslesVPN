@@ -1,0 +1,99 @@
+@import "../responsive";
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+
+  @include responsive(md){
+      @include section()
+
+    }
+  
+
+  
+
+  &__btn {
+    position: relative;
+    width: 15.6rem;
+    height: 3.75rem;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    background-color: var(--orange);
+    color: var(--bg);
+    border-radius: 10px;
+    border: var(--orang) solid 0.1rem;
+    padding: 1.7rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include responsive(lg){
+      width: 10.6rem;
+      height: 1.7rem;
+    }
+
+  }
+
+  &__btn::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 1px 20px 20px 8px rgba(245, 56, 56, 0.219607843);
+    z-index: 1;
+  }
+}
+
+.hero__header {
+  font-size: 3.1rem;
+  font-weight: var(--weight-500);
+  max-width: 34.6rem;
+  max-height: 8.7rem;
+  padding-top: 1rem;
+  line-height: 4.5rem;
+
+  @include responsive(lg) {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    padding-top:0rem;
+  }
+  
+  @include responsive(md) {
+    font-size: 2rem;
+    line-height: 2.7rem;
+  }
+  
+
+}
+
+
+.hero .section__content{
+  gap: 2rem;
+  @include responsive(md){
+      align-items: center;
+      gap: 1rem;
+    }
+  
+}
+
+.hero__paragraph{
+  font-size: 1rem;
+  font-weight: var(--weight-400);
+  max-width: 34.6rem;
+  max-height: 3.75rem;
+  color: var(--paragraph);
+  line-height: 1.8rem;
+}
+
+.hero .hero__img {
+  order: 1;
+  max-width: 38.1rem;
+  max-height: 23.8rem;
+  @include responsive(lg) {
+    order: 0;
+
+  }
+}

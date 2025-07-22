@@ -1,126 +1,28 @@
-@media (max-width: 900px) {
-  header {
-    position: relative;
-  }
-
-  .nav-bar {
-    position: absolute;
-    bottom: -0.5rem;
-    width: 100%;
-  }
-  header .bottoms {
-    flex-basis: 50%;
-    justify-content: flex-end;
-  }
-  .head {
-    gap: 0rem;
-  }
-  h1 {
-    font-size: 35px;
-    max-width: 450px;
-  }
-  .head-content p {
-    max-width: 450px;
-  }
-  .features {
-    gap: 1.5rem;
-
-    .features-content {
-      padding-top: 1rem;
+/* utils/_responsive.scss */
+@mixin responsive($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: 480px) {
+      @content;
     }
-
-    .features-p {
-      margin-bottom: 0.5rem;
+  } @else if $breakpoint == sm {
+    @media (max-width: 768px) {
+      @content;
     }
-  }
-
-  .subscribe {
-    padding: 2rem;
+  } @else if $breakpoint == md {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (max-width: 1200px) {
+      @content;
+    }
   }
 }
 
+
 @media (max-width: 768px) {
-  .container {
-    max-width: 90%;
-  }
-
-  .main-view {
-    margin-top: 2rem;
-  }
-
-  h2 {
-    height: fit-content;
-    max-width: 300px;
-  }
-
-  header .bottoms a {
-    width: 100px;
-    height: 35px;
-    padding: 0.4rem 0.2rem;
-  }
-  .sign-in {
-    text-align: end;
-  }
-
-  .head {
-    gap: 1rem;
-  }
-
-  .head,
-  .features,
-  .pricing {
-    flex-direction: column;
-  }
-
-  .head-content,
-  .features-content {
-    align-items: center;
-    text-align: center;
-    gap: 1.5rem;
-  }
-
-  .head .head-img {
-    order: 0;
-  }
-
-  .spread {
-    height: fit-content;
-    box-shadow: none;
-    gap: 2rem;
-    margin-bottom: 0;
-
-    .location,
-    .server,
-    .user {
-      border: none;
-      padding: 1rem;
-      box-shadow: 1px 2px 20px 0px rgb(13 16 37 / 5%);
-      border-radius: 10px;
-    }
-  }
-
-  .pricing-p {
-    text-align: center;
-  }
-
-  .network h2,
-  .testimonials h2,
-  .subscribe h2 {
-    height: fit-content;
-  }
-
-  .network .network-p,
-  .testimonials-p {
-    margin-bottom: 0.5rem;
-  }
-
   .colab {
     height: fit-content;
-  }
-
-  .network,
-  .testimonials {
-    gap: 1rem;
   }
 
   .testimonials .people {
@@ -129,32 +31,6 @@
 
   .swap .dots .dot.suc {
     margin-left: -1.3rem;
-  }
-
-  .subscribe {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    align-items: flex-start;
-
-    h2,
-    p {
-      max-width: 100%;
-    }
-
-    .get-start-link {
-      box-shadow: none;
-      margin-top: 1rem;
-    }
-  }
-
-  .footer {
-    flex-direction: column;
-  }
-
-  .social-icons {
-    margin-left: -1rem;
   }
 
   .lists {
@@ -180,46 +56,10 @@
 }
 
 @media (max-width: 500px) {
-  h1 {
-    font-size: 30px;
-  }
-
-  h2 {
-    font-size: 25px;
-    width: 100%;
-  }
-
-  .nav-bar{
-    top: -50rem;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    background-color: var(--bg);
-    transition: .3s;
+  header{
     padding: 1rem;
-    z-index: -1;
   }
-
-
-  .nav-mobile {
-    display: inline-block;
-    flex-basis: 30px;
-
-    #nav-mobile-checkbox {
-      display: none;
-    }
-
-  }
-
-  header:has(#nav-mobile-checkbox:checked)  .nav-bar{
-   top: 5rem;
-  }
-
-
   
-
-
-
   .colab {
     flex-wrap: wrap;
     .colab-img {
@@ -227,20 +67,5 @@
     }
   }
 
-  header .bottoms {
-    display: none;
-  }
-
-  .subscribe {
-    padding: 1rem;
-  }
-
-  .features,
-  .features .features-content {
-    padding: 0;
-    width: 100%;
-  }
-  .features-p {
-    line-height: normal;
-  }
+ 
 }
