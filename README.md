@@ -33,6 +33,6 @@ _Add screenshots here if available (you can upload image files or use links to h
 To run this project locally:
 
 ```bash
-git clone https://github.com/RawanYasser297/Personal-Portfolio.git
+git clone https://github.com/RawanYasser297/FREEBIES-Landingpage-LaslesVPN
 cd Personal-Portfolio
 open index.html  # or just double-click the file
