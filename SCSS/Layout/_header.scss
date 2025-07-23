@@ -13,7 +13,7 @@ header {
   .bottoms {
     flex-basis: 25%;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
   }
 
@@ -28,7 +28,7 @@ header {
     }
   }
 
-  @include responsive(xs) {
+  @include responsive(sm) {
     .bottoms{
       display: none;
     }
@@ -65,12 +65,11 @@ header {
 }
 
 
-    .menu:has(#menu_checkbox:checked) ~ .nav-bar{
-      top: 2rem;
-      background-color: aqua;
-    }
+    // .menu:has(#menu_checkbox:checked) ~ .nav-bar{
+    //   top: 2rem;
+    // }
 
 
     header:has(#menu__checkbox:checked) .nav-bar {
-    top: 5rem;
+    top: 6rem;
   }

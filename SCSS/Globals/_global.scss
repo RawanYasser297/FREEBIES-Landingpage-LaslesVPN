@@ -18,7 +18,7 @@ body {
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  gap: 3.12rem;
+  gap: 5rem;
   z-index: 100;
 
   @include responsive(sm){
@@ -26,6 +26,8 @@ body {
   }
 
 }
+
+
 
 .section {
   display: flex;
